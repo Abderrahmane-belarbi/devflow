@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "DevOverflow",
   description: "A community-driven platform for asking and answering programming questions. get help, share knowledge",
   icons: {
-    icon: '/public/assets/images/jsm-logo-dark.svg'
+    icon: '/public/assets/images/logo-dark.svg'
   }
 };
 
@@ -22,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className="custom-scrollbar">
         <ClerkProvider
           appearance={{
             elements: {

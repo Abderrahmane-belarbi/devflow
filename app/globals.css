@@ -163,3 +163,7 @@ code {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+::selection {
+  background: #E36414
+}
