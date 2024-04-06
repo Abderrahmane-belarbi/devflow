@@ -3,11 +3,11 @@
 import Question from "@/database/question.model";
 import { connectToDataBase } from "../mongoose"
 import Tag from "@/database/tag.model";
-import { getQuestionParams, createQuestionParams} from "./shared.types";
+import { GetQuestionsParams, CreateQuestionParams} from "./shared.types";
 import User from "@/database/user.model";
 import { revalidatePath } from "next/cache";
 
-export async function getQuestions(params: getQuestionParams){
+export async function getQuestions(params: GetQuestionsParams){
   try {
     connectToDataBase();
 
@@ -23,7 +23,7 @@ export async function getQuestions(params: getQuestionParams){
   }
 }
 
-export async function createQuestion(params: createQuestionParams){
+export async function createQuestion(params: CreateQuestionParams){
   try{
     // connect to the database
     connectToDataBase()
